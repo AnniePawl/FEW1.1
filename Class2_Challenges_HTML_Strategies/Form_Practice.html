@@ -1,0 +1,109 @@
+<!--
+
+ Challenge 4: You have been tasked to create a
+ for that sets a users profile. It will allow
+ them to do the following:
+
+ - Enter their User name (input text, should not autocomplete)
+ - Email (input email)
+ - Number of pets (input number)
+ - Birthday (input date)
+ - Choose an prefix (select)
+ - Set a role (input type radio)
+ - Show public profile (checkbox, should be checked by default)
+ - Enter a bio (textarea)
+ - Upload a picture (input file, should only accept images)
+ - Self Destruct (input checkbox, should be DISABLED by default since we haven't implemented this feature yet)
+
+ Your job is to:
+ - Organize this better by adding tags
+ - Add sensible placeholders
+ - Connect lables to elements
+ - Associate lables with their form element
+
+ The form must to send file data. Set the attributes on the form tag:
+ - It must send a file wat are the required attributes for this?
+
+ Stretch Challenge: Use the pattern attribute to check the values in
+ fields meet requirements. (you will need to have experience with
+ regular expressions)
+ - Name should not be empty.
+ - Name should be at least 6 characters
+ - Name should only contain letters and numbers
+
+ -->
+
+<form>
+
+<h1><strong>Pet Playdate Club</strong></h1>
+
+<p>
+    <label><strong>Name</strong></label>
+    <input name="name" placeholder="Joe Jones">
+</p>
+
+<p>
+    <label><strong>Email</strong></label>
+    <input name="email" placeholder="name@email.com">
+</p>
+
+<p>
+    <label><strong>Pet's Name</strong></label>
+    <input name="name" placeholder="Fluffy">
+</p>
+
+<p>
+    <label><strong>Pet Breed</strong></label>
+    <input name="name" placeholder="Border Collie">
+</p>
+
+<p>
+  <label><strong>Pet Count</strong></label>
+  <input name="pets" placeholder="#" >
+</p>
+
+
+<p>
+  <input type="checkbox" name="public">
+  <label><strong>Pet Bio</strong></label>
+  <textarea name="bio"></textarea>
+</p>
+
+  <select name="prefix">
+    <option>Mr</option>
+    <option>Mrs</option>
+    <option>Ms</option>
+    <option>Sir</option>
+    <option>Madam</option>
+    <option>Dr</option>
+    <option>None</option>
+</select>
+
+
+<p>
+  <input type="radio" name="role" value="Admin" id="role1"/>
+  <label for="role1">Admin</label>
+  <input type="radio" name="role" value="Editor" id="role2" />
+  <label for="role2">Editor</label>
+  <input type="radio" name="role" value="Contributor" id="role3"/>
+  <label for="role3">Contributor</label>
+  <input type="radio" name="role" value="Contributor" id="role4" />
+  <label for=role4>Contributor</label>
+</p>
+
+
+<p>
+  <label><strong>Upload Image</strong></label>
+  <input name="image" type="file">
+</p>
+
+<p>
+  <label><strong>Self Destruct</strong></label>
+  <input name="self-destruct" type="check">
+</p>
+
+<p>
+  <button type="submit">Submit</button>
+</p>
+
+</form>
