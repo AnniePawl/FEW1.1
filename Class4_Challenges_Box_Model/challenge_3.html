@@ -1,64 +1,136 @@
 
-<!--
+<!doctype html>
+<html>
+<head>
+    <style>
+
+    body {
+        font-size: 20px
+        font-family: Helvetica;
+    }
+    h1 {
+        font-size: 2em;
+        color: red;
+        border: 3px solid black;
+        border-radius: 20px;
+        padding: 10px;
+        width: 250px;
+        margin: auto;
+        text-align: center;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+    h4 { border: 2px solid black;
+        padding: 5px;
+    }
+
+    input {border: 1px solid black;
+            padding: 5px;
+            border-radius: 10px;
+        }
 
 
- -->
- <h1>Burger <br> King</h1>
+    p {
+        font-size: 1em;
+        text-align: center;
+    }
 
 
- <!doctype html>
- <html>
+    textarea {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form-div {
+        display: flex;
+        flex-direction: column;
+        font-size: 1em;
+        text-align: center;
+
+    }
+
+    .input-field {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    </style>
+</head>
 
 <body>
+
+<h1>Book Club</h1>
+
 <form action="/your/api" method="">
 
-  <!-- use a p or other block tag to organize form elements onto lines -->
+<div class="input-field">
+
   <p>
-    <label>Name</label>
-    <input name="name" type="text" placeholder="Your name">
+    <label for="name">
+        <strong>Name</strong></label>
+    <input id="name" name="name" type="text" placeholder="Your Name">
   </p>
 
-  <label>Email</label>
-  <input name="email" type="email">
 
-  <label>Pet Count</label>
-  <input name="pets">
+ <p>
+  <label for "email"><strong>Email</strong></label>
+  <input name="email" type="email" placeholder="name@email.com">
+</p>
 
-  <label>Birthday</label>
-  <input name="birthday">
+ <p>
+  <label for "birthday"><strong>Birthday</strong></label>
+  <input name="birthday" type="date" placeholder "00/00/00">
+</p>
 
-  <select name="prefix">
-    <option>Mr</option>
-    <option>Mrs</option>
-    <option>Ms</option>
-    <option>Sir</option>
-    <option>Madam</option>
-    <option>Dr</option>
+</div>
+
+<div class="form-div">
+<h4>Genre Preference</h4>
+  <select genre="preference">
+    <option>Science Fiction</option>
+    <option>Historical Fiction</option>
+    <option>Fantasy</option>
+    <option>Mystery</option>
+    <option>Thriller</option>
+    <option>Memoir</option>
     <option>None</option>
   </select>
+</div>
+
+<br>
 
   <!-- Associate labels with form elements with for and id -->
-  <input id="radio-admin" type="radio" name="role" value="Admin"/>
-  <label for="radio-admin">Admin</label>
 
-  <input type="radio" name="role" value="Editor" />
-  <label>Editor</label>
+ <div class="form-div">
+    <h4>Book Club Role</h4>
+      <input id="radio-host" type="radio" name="role" value="Host"/>
+      <label for="radio-host">Host</label>
+    <br>
 
-  <input type="radio" name="role" value="Contributor" />
-  <label>Contributor</label>
 
-  <input type="checkbox" name="public">
-  <label>Public Bio</label>
+      <input id="radio-treasurer"type="radio" name="role" value="Treasurer" />
+      <label for="radio-treasurer">Treasurer</label>
 
+
+    <br>
+      <input id="radio-event-planner"type="radio" name="role" value="Event Planner" />
+      <label for="radio-event-planner">Event Planner</label>
+</div>
+
+
+<div class="form-div">
+    <h4>Breif Bio</h4>
+<br>
   <textarea name="bio"></textarea>
 
+<div class="form-div">
   <label>Upload Image</label>
+    <br>
+    <br>
   <input name="image" type="file">
+</div>
 
-  <label>Self Destruct</label>
-  <input name="self-destruct" type="check">
-
-  <button type="submit">Submit</button>
 </form>
 </body>
  </html>
