@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+
+    <style >
+
+    h1 { color: blue;
+        border: 2px solid black;
+        border-radius: 10px;
+        margin: auto;
+        padding: 10px;
+        width: 250px;
+        text-align: center;
+    }
+
+    h2 {color: blue;
+    text-align: center;}
+
+    .inline {
+        float: left;
+        border: 2px solid black;
+        border-radius: 10px;
+        margin: auto;
+        padding: 10px;
+        width: 250px;
+    }
+
+    .block {
+        float: right;
+        border: 2px solid black;
+        border-radius: 10px;
+        margin: auto;
+        padding: 10px;
+        width: 250px;
+    }
+
+    p {text-align: center;}
+
+    </style>
+
+    </head>
+    <body>
+
+<h1> CSS Box Model </h1>
+
+    <p>Elements can be divided into two dispaly systems:
+    <strong>Inline</strong> and <strong>Block</strong>
+    </p>
+
+<div class="inline">
+    <h2>Inline</h2>
+        <ul>
+            <li>Always starts on a new line</li>
+            <li>Take up full width available</li>
+        </ul>
+    <pre>
+        <code>&ltspan> Hello &lt/span></code>
+        <code>&ltspan> World &lt/span></code>
+    </pre>
+
+<h3><strong>Common Inline Elements</strong></h3>
+    <ul>
+        <li>Spans &ltspan></li>
+        <li>Images &ltimg></li>
+        <li>Anchors &lta></li>
+    </ul>
+</div>
+
+<div class="block">
+    <h2>Block</h2>
+        <ul>
+            <li>Does not start on a new line</li>
+            <li>Only takes up as much width as needed</li>
+        </ul>
+
+
+        <h3><strong>Common Block Elements</strong></h3>
+        <ul>
+            <li>Paragraphs &ltp></li>
+            <li>Headers &lth1> through &lth6></li>
+            <li>Divisions &ltdiv></li>
+            <li>Lists and list items &ltol> , &ltul>, and &ltli> </li>
+            <li>Forms &ltform></li>
+        </ul>
+
+    <pre>
+        <code>&ltdiv> Hello &lt/div></code>
+        <code>&ltdiv> World &lt/div></code>
+    </pre>
+
+</div>
+
+    </body>
+
+</html>
