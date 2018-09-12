@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Tip Calc</title>
+    <style>
+
+        h1 { font-size: 35px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+
+        }
+
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            }
+
+        fieldset {
+            padding: 25px;
+
+        }
+
+        p { display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        input {
+
+            text-align: center;
+            border: .5px solid black;
+            border-radius: 25px;
+            font-size: 1.5em;
+            width: 80%;
+            margin: auto;
+        }
+
+
+        .calc-area {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        button {
+             background-color: #4CAF50;
+            text-align: center;
+            border-radius: 25px;
+            margin: auto;
+            width: 60%;
+
+        }
+
+    </style>
+</head>
+
+  <body>
+      <main>
+          <fieldset>
+            <div class="container">
+                <h1>Tip Calculator</h1>
+
+                <p>
+                  <label for="amount"><b>Bill</b></label> <br>
+                          <input id="amount" type="number" value="0.00">
+                </p>
+
+                <p>
+                  <label for="percent"><b>Tip Percent</b></label> <br>
+                  <input id="percent" type="number" value="15">
+                </p>
+
+                <button id="calculate">Calculate</button>
+
+
+                <div>
+                    <p class="calc-area">
+                      <span>Tip:</span>
+                      <span id="tip">$ 0.00</span>
+                    </p>
+
+
+                    <p class="calc-area">
+                        <span>Total:</span>
+                        <span id="total">$ 0.00</span>
+                    </p>
+
+                </div>
+            </div>
+
+        </fieldset>
+    </main>
+  </body>
+</html>
