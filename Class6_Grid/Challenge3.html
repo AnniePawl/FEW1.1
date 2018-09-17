@@ -21,6 +21,22 @@
 
   /* Your styles here */
 
+  .container {
+    display: grid;
+    grid-gap: 15px;
+    width: 350px;
+    height: 450;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    grid-template-areas:  "a a a "
+                          "b c c "
+                          "b c c"
+                          "b d d"
+                          "e e e ";
+  }
+
 
 
 
@@ -34,22 +50,27 @@
 
   .a {
     background-color: #d45353;
+    grid-area: a;
   }
 
   .b {
     background-color: #eae55e;
+    grid-area: b;
   }
 
   .c {
     background-color: #65d451;
+    grid-area: c;
   }
 
   .d {
     background-color: #86b9f5;
+    grid-area: d;
   }
 
   .e {
     background-color: #cf86f5;
+        grid-area: e;
   }
 
 </style>
