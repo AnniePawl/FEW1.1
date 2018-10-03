@@ -1,3 +1,16 @@
+#What is JavaScript?
+Plain text
+
+#How to use it:
+##Script Tag
+`<script>
+  // Some JavaScript here...
+  const message = 'hello world';
+</script>`
+#OR
+##Link to JavaScript in a .js file
+`<script src="main.js"></script>`
+
 #Where is JavaScript used?
 
 ##Everywhere. Seriously. Use JavaScript to:
