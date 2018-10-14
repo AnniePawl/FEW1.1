@@ -4,14 +4,14 @@
   <div class="box"><span>Option 3</span></div>
   <div class="box selected"><span>Option 4</span></div>
 </div>
-
+ <br>
 <div>
-  <h1 id="title">???</h1>
+  <h1 id="title">Which Option?</h1>
   <input id="title-input" type="text">
 </div>
 
 <div>
-  <h1 id="choice">???</h1>
+  <h1 id="choice">Choose a Cookie!</h1>
   <select id="choose">
     <option>Chocolate Chip</option>
     <option>Snickerdoodle</option>
@@ -48,6 +48,15 @@
     align-items: center;
   }
 
+
+input {
+    padding: 0.5 em;
+}
+
+.input-focus {
+    border: 4px solid;
+}
+
   .box.selected {
     border: 10px solid rgba(0, 0, 0, 0.25);
   }
@@ -65,22 +74,26 @@
     }
   }
 
+//  Const
+
   const title = document.getElementById('title');
   const titleInput = document.getElementById('title-input');
 
   titleInput.onfocus = function(e) {
     console.log(this, "has focus!");
+    this.classList.add('input-focus')
   }
 
   titleInput.onblur = function(e) {
     console.log(this, "blur!");
+    this.classList.remove('input-focus')
   }
 
   titleInput.oninput = function(e) {
     console.log(this.value);
     title.innerHTML = this.value;
   }
-  
+
   // Challenges
 
   // 1) Add another box
