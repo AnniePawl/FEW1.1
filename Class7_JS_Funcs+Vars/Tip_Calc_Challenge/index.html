@@ -2,32 +2,36 @@
 <html>
   <head>
     <title>Tip Calculator Challenge</title>
+    <!--Import Style Sheet-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
+
   <body>
+    <div class="container">
+        <h1>TIP CALCULATOR</h1>
 
-    <h1>Tip Calculator</h1>
+        <p>
+          <h4><label for="amount">BILL AMOUNT</label></h4>
+          <input id="amount" type="number" value="0.00">
+        </p>
 
-    <p>
-      <label for="amount">Bill</label>
-      <input id="amount" type="number" value="0.00">
-    </p>
+        <p>
+          <h4><label for="percent">TIP PERCENTAGE </label></h4>
+          <input id="percent" type="number" value="15">
+        </p>
 
-    <p>
-      <label for="percent">Tip %</label>
-      <input id="percent" type="number" value="15">
-    </p>
+        <button id="calculate">Calculate</button>
 
-    <button id="calculate">Calculate</button>
+        <h3>
+          <span>TIP:</span>
+          <span id="tip">0.00</span>
+      </h3>
 
-    <p>
-      <span>Tip:</span>
-      <span id="tip">0.00</span>
-    </p>
-
-    <p>
-      <span>Total:</span>
-      <span id="total">0.00</span>
-  </p>
+        <h3>
+          <span>TOTAL:</span>
+          <span id="total">0.00</span>
+      </h3>
+    </div>
 
     <!-- Scripts -->
     <script src="main.js"></script>
